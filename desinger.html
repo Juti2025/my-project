@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #1F1F1F;
+
+
+    }
+
+    .logo {
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        padding-left: 20px;
+
+    }
+
+    .navbar {
+        color: aliceblue;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        background-color: #1F1F1F;
+
+
+    }
+
+    a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    .navbar li:hover{
+        background-color: rgb(68, 5, 68);
+        transform: translateY(2deg);
+        box-shadow: 0 10px 20px rgba(245, 7, 193, 0.2);
+    }
+
+    ul {
+        display: flex;
+    }
+
+    .HERO {
+        display: flex;
+
+    }
+
+    .content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 170px;
+
+    }
+
+    p {
+        padding-bottom: 30px;
+    }
+
+    img {
+        max-height: 700px;
+    }
+
+    .image {
+        display: flex;
+        align-items: end;
+    }
+
+    button {
+        color: aliceblue;
+        background-color: #1F1F1F;
+        border-color: aliceblue;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    button:hover{
+         background-color: rgb(68, 5, 68);
+        transform: translateY(-20px);
+        box-shadow: 0 10px 20px rgba(245, 7, 193, 0.2);
+
+    }
+
+    .icon a i {
+        color: white;
+        width: 50px;
+        font-size: 30px;
+        padding: 10px;
+
+
+
+    }
+
+    .icon a i:hover{
+        background-color:rgba(233, 96, 203, 0.2); ;
+       transform: translateY(5px);
+       box-shadow: 0 10px 20px rgba(233, 96, 203, 0.2);
+
+    }
+
+    .myskills {
+        background-color: black;
+        color: rgb(232, 242, 250);
+        text-align: center;
+        padding: 100px;
+        padding-top: 200px;
+        padding-bottom: 300px;
+
+
+    }
+
+    .myskills h1 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .myskills p {
+        color: rgb(144, 158, 170);
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .skill-item {
+        background-color: #1F1F1F;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .skill-item:hover {
+        background-color: rgb(68, 5, 68);
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 50px;
+        max-width: 1400px;
+        margin: 0 auto;
+
+
+    }
+
+    .card {
+        width: 380px;
+        text-align: left;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #2b2a2a;
+        height: 500px;
+
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+
+    .Projects {
+        text-align: center;
+        color: aliceblue;
+        padding-top: 200px;
+        padding-bottom: 300px;
+    }
+
+    .Projects h1 {
+
+        font-size: 60px;
+        margin-bottom: 40px;
+
+    }
+
+    .Projects p {
+        color: #9e9b9b;
+    }
+
+    .card a {
+        display: block;
+        color: aqua;
+        text-decoration: none;
+        margin: 20px 0px 0px 10px;
+        font-weight: bold;
+    }
+
+    .card:hover {
+        background-color: rgb(68, 5, 68);
+        transform: translateY(-20px);
+        box-shadow: 0 10px 20px rgba(245, 7, 193, 0.2);
+    
+    }
+
+    .card h2 {
+        margin-left: 10px;
+    }
+
+    .card p {
+        margin-left: 10px;
+    }
+
+    .Contact h1 {
+        font-size: 60px;
+
+    }
+
+    .Contact {
+        background-color: #080808;
+        text-align: center;
+        color: antiquewhite;
+        padding-top: 200px;
+        padding-bottom: 300px;
+    }
+
+    .Contact input {
+        height: 36px;
+        border: none;
+        padding: 5px;
+        width: 500px;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+  
+
+
+</style>
+
+
+   
+</style>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#a">Home</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contract">Contacts</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="icon">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+    </header>
+
+    <section class="HERO">
+        <div class="content">
+            <div style="color: aliceblue;" class="text">
+                <h2>
+                    Hi, I'M SAUL
+                </h2>
+                <h1 style="font-size: 80px;">
+                    I'M A WEB <br>
+                    DESIGNER
+                </h1>
+                <P style="color: rgb(171, 196, 218);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores
+                    <br>sit accusamus molestiae, ut vel quidem dolor, iusto id consequatur
+                    <br> numquam deleniti,inventore aperiam minus unde soluta quaerat
+                    <br> necessitatibus fuga. Reiciendis.
+                </P>
+
+
+            </div>
+
+            <div class="button">
+                <h2> <button>VIEW MY PROJECTS</button> </h2>
+
+            </div>
+        </div>
+        <div class="image">
+            <img src="8-business-woman-girl-png-image.png" alt="">
+
+        </div>
+
+    </section>
+
+    <section class="myskills" id="about">
+        <h1> My Skills</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, adipisci.</p>
+        <div class="skills-grid">
+
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSSC</div>
+            <div class="skill-item">JAVASCRIPT</div>
+            <div class="skill-item">BOOTSTRAP</div>
+            <div class="skill-item">TAILWIND CSS</div>
+            <div class="skill-item">REACT</div>
+            <div class="skill-item">WORDPRESS</div>
+            <div class="skill-item">FIGMA</div>
+            <div class="skill-item">GIT & GITHUB</div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="Projects" id="Projects">
+        <h1> My Projects</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolores.</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="1-1.png" alt="">
+                <h2>Portfolio Website</h2>
+                <p>A modern Portfolio website built with HTML, CSS and Javascript </p>
+                <a href="" target="_blank"> View Project</a>
+
+            </div>
+
+            <div class="card">
+                <img src="image.png" alt="">
+                <h2>Blog Platform</h2>
+                <p>A responsive blogsite using Wordpress and Custom Themes</p>
+                <a href="" target="_blank"> View Project</a>
+
+            </div>
+            <div class="card">
+                <img src="Ecommerce-Website-Design-Feature-Image-scaled.webp" alt="">
+                <h2>E-Commerce Store</h2>
+                <p>Fully functional store built with React and Firebase backend</p>
+                <a href="" target="_blank"> View Project</a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="Contact"  id="contract">
+
+        <h1>
+            Contact Me
+        </h1>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea style="width: 400px;" id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button style="padding: 20px 40px 20px 40px;" type="submit">Send Message</button>
+        </form>
+
+
+
+
+    </section>
+
+
+</body>
+
+</html>
